@@ -19,6 +19,14 @@ It contains a protocol map which has all the protocols excluding Reserved and un
 
 **processing.py** - Processes specifically AWS VPC flow logs to get the Counts of tags and port/protocol combination. Ref: https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html
 
+## Assumptions:
+1. The flow log file format adheres to the standard AWS VPC Flow Log format, with fields separated by spaces and the protocol field represented as a number. 
+2. A port, protocol combination corresponds to only one tag but same tag can correspond to different port, protocol combination.
+
 ## Instructions:
 1. Before running the program, update the file paths in constants.py file.
 2. After that run main.py file to get the final_output.txt at your desired path.
+
+## Tests Done
+1. Tests were done to check that the program adheres to the assumptions made and fails when they are not met.
+2. Tests were done with various combination that broke the code and the program was able to handle the error.
