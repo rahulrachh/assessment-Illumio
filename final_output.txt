@@ -1,0 +1,15 @@
+Tag Counts:
+Tag		Count
+sv_P5		12
+sv_P2		11
+Untagged	11
+sv_P4		11
+sv_P6		11
+
+Port/Protocol Combination Counts:
+Port	Protocol	Count
+80		tcp			12
+443		tcp			11
+22		tcp			11
+53		udp			11
+110		tcp			11
